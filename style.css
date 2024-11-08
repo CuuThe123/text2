@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    cursor: pointer;
 }
 
 html {
@@ -12,18 +13,22 @@ html {
 #wrapper {
     width: 100%;
     height: 100vh;
+    color: #f42424;
     margin: auto;
 }
 
 #header {
     width: 100%;
     padding: 10px 30px;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
+    color: black;
     position: fixed;
     top: 0;
+    left: 0;
     z-index: 9999;
     height: 70px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -37,6 +42,7 @@ html {
 #menu {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 #menu .item {
@@ -104,18 +110,17 @@ html {
     height: 463px;
     margin-top: 40px;
     display: flex;
-    flex-wrap: wrap;
-    padding: 70px 30px;
+    padding: 0px 133px;
     position: relative;
 }
 
 #banner .box-left, #banner .box-right {
-    width: 100%;
-    text-align: center;
+    width: 50%;
 }
 
 #banner .box-left h2 {
-    font-size: 2rem;
+    font-size: 48px;
+    margin-top: 75px;
     color: #fff;
 }
 
@@ -197,13 +202,19 @@ html {
 
 #list-products {
     display: flex;
+    list-style: none;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 #list-products .item {
-    width: calc(50% - 20px);
-    margin: 10px;
+    width: 290px;
+    height: 374px;
+    background: #362f2f;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    overflow: hidden;
 }
 
 #list-products .item img {
@@ -498,19 +509,4 @@ html {
 #footer .apps img {
     width: 135px;
     margin-top: 10px;
-}
-@media (min-width: 768px) {
-    #banner .box-left, #banner .box-right {
-        width: 50%;
-    }
-
-    #list-products .item {
-        width: calc(33.33% - 20px);
-    }
-}
-
-@media (min-width: 1024px) {
-    #list-products .item {
-        width: calc(25% - 20px);
-    }
 }
